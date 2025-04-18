@@ -2,7 +2,7 @@ CREATE TABLE Users(
 id INT IDENTITY(1,1),
 email VARCHAR(50),
 password VARCHAR(50),
-registrationDate DATE
+registrationDate DATE DEFAULT CURRENT_DATE
 );
 
 CREATE TABLE FRIENDS(
@@ -14,7 +14,7 @@ CREATE TABLE Walls(
 usr INT,
 author INT,
 text_message VARCHAR(200),
-date DATE
+date DATE DEFAULT CURRENT_DATE
 );
 
 CREATE TABLE Groups(
